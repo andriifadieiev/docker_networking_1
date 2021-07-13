@@ -1,0 +1,4 @@
+FROM alpine:3.14
+RUN apk add --update --no-cache netcat-openbsd
+COPY client.sh /
+RUN chmod +x /client.sh
